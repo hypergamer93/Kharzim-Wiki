@@ -3,18 +3,53 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/navigation-bar.css">
 		<title>Kharzim Wiki - Home</title>
 	</head>
 	<body>
-		<nav>
-			<a href="index.html" class="nav-link">Home</a>
-			<a href="nations.html" class="nav-link">Nations</a>
-			<a href="misc.html" class="nav-link">Misc (to sort)</a>
-		</nav>
-		<div class="wrapper">
-			<h1>The World of Kharzim</h1>
-			<p>Welcome to the world of Kharzim. This guide will tell you everything you need to know about this great land. From the smallest villages, to the greatest empires. Everything has a place here.</p>
+		<div class="nav-bar">
+			<ul>
+				<li><a href="index.html" class="nav-link">Home</a></li>
+				<li><a href="html/nations.html" class="nav-link">Nations</a></li>
+				<li><a href="html/misc.html" class="nav-link">Misc (to sort)</a></li>
+			</ul>
+		</div>
+		<div class="container">
+			<div class="flex-box">
+				<h1>The World of Kharzim</h1>
+				<p>Welcome to the world of Kharzim. This guide will tell you everything you need to know about this great land. From the smallest villages, to the greatest empires. Everything has a place here.</p>
+			</div>
+			<div class="flex-box changelog">
+				<h2>Changelog</h2>
+				<div class="flex-box"> 
+					<!-- This will need to be moved below 20230426 after flex issue in style.css has been resolved. May need to create a new div with "not-flex" class inside the "flex-box" divs? -->
+					<h3>20230429</h3>
+					<ul>
+						<h4>Added</h4>
+						<li>Changelog on the home page</li>
+						<h4>Changed</h4>
+						<li>Updated styling to be cleaner</li>
+						<h4>Fixed</h4>
+						<li>Spelling errors in multiple pages</li>
+						<li>Grammatical errors in multiple pages</li>
+					</ul>
+				</div>
+				<div class="flex-box">
+					<h3>20230426</h3>
+					<ul>
+						<h4>Added</h4>
+						<li>Home Page</li>
+						<li>Misc Page</li>
+						<li>Nations Page</li>
+						<li>Sershan Empire</li>
+						<li>Marcuthi Republic</li>
+						<li>Kingdom of Mutsu</li>
+						<li>The Island Prisons</li>
+						<li>Basic styling</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

@@ -1,0 +1,52 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+	background-color:#eaddae
+}
+
+body {
+	margin: 0px;
+}
+
+.container {
+	display: flex;
+	width: 1000px;
+	margin: auto;
+	flex-direction: column;
+}
+
+.flex-box {
+	/* display: flex;  */
+	/*Turn on when you figure out how not to make it fuck up everything. Somehow, you'll need yo remove the display: flex from everything inside the flex boxes. could probably just make a class called ".not-flex" anyways, this can probably be in the next upload */
+	padding: 10px;
+	margin: 10px;
+	background-color: #00000029;
+}
+
+.flex-box h1 {
+	font-size: 50px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.flex-box li {
+	margin-left: 20px;
+	list-style-type: circle;
+}
+
+.changelog {
+	flex-direction: column-reverse;
+}
+
+li {
+	list-style-type: circle;
+}
+
+ul .has-link {
+	list-style-type: disc;
+}

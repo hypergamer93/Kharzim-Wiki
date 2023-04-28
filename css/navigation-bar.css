@@ -1,0 +1,27 @@
+.nav-bar {
+    list-style-type: none;
+	background-color: #A0A0A0;
+    overflow: hidden;
+}
+
+.nav-bar li {
+	float: left;
+    list-style-type: none;
+}
+
+.nav-bar a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	padding: 10px;
+	margin: auto;
+}
+
+.nav-link:hover {
+	background-color: #838383;
+}
+
+.nav-link:active {
+	background-color: #5f5f5f;
+	color: #ffffff;
+}
