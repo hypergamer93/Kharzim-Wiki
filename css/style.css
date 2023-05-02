@@ -1,52 +1,79 @@
+/* Note to future me.
+Make sure you comment what each css class does so you can look back while making future projects. Should also make it easier to refine of you find a better way of doing something. Also create template pages for html so you don't have to recreate everything every single time you make a new page. That would suck, so just make the templates, and we all good. */
+
+/* css purge. overwrites the browser specificity */
 * {
-	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
+	margin: 0px;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Changes the background colour for the heml element */
 html {
 	background-color:#eaddae
 }
 
-body {
-	margin: 0px;
+
+details {
+	display: block;
 }
 
-.container {
-	display: flex;
-	width: 1000px;
-	margin: auto;
-	flex-direction: column;
+summary {
+	font-weight: bold;
+	font-size: 20px;
 }
 
-.flex-box {
-	/* display: flex;  */
-	/*Turn on when you figure out how not to make it fuck up everything. Somehow, you'll need yo remove the display: flex from everything inside the flex boxes. could probably just make a class called ".not-flex" anyways, this can probably be in the next upload */
-	padding: 10px;
-	margin: 10px;
-	background-color: #00000029;
-}
-
-.flex-box h1 {
-	font-size: 50px;
-	text-align: center;
-	margin-bottom: 20px;
-}
-
-.flex-box li {
-	margin-left: 20px;
-	list-style-type: circle;
-}
-
-.changelog {
-	flex-direction: column-reverse;
-}
-
+/* Makes the dot on all li elements a circle */
 li {
 	list-style-type: circle;
 }
 
+/* Makes the circle on all li elements with this class a disc */
 ul .has-link {
 	list-style-type: disc;
+}
+
+/* Creates a center aligned flex container to hold flex boxes. Direction is set to column so that the boxes go down the page */
+.container {
+	display: flex;
+	width: 1000px; /* Find width % which fixes the boxes inside the changelog */
+	margin: auto;
+	flex-direction: column;
+}
+
+/* Creates a box for items that go inside the container */
+.flex-box {
+	display: flex; 
+	padding: 10px;
+	margin: 10px;
+	width: inherit;
+	background-color: #00000029;
+}
+
+/* Changes the h1 element in the flex box class to center it and make the text larger than normal */
+.flex-box h1 {
+	font-size: 50px;
+	text-align: center;
+}
+
+/* Gives the list items a margin so that the dot lines up inside of the flex box elements, instead of sitting outside them */
+.flex-box li {
+	margin-left: 20px;
+}
+
+/* Used inside divs with ".flex box" class to remove the flex display*/
+.unflex {
+	display: block;
+	width: inherit;
+}
+
+/* Makes the changelog display as a reversed collumn, so new changelog entries can be written after the others, but still display before them in the preview */
+.changelog-direction {
+	flex-direction: column-reverse;
+}
+
+/* Pushes this id to the top of the changelog on the preview */
+#changelog {
+	order: 1;
 }

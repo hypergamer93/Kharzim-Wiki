@@ -17,38 +17,62 @@
 		</div>
 		<div class="container">
 			<div class="flex-box">
-				<h1>The World of Kharzim</h1>
-				<p>Welcome to the world of Kharzim. This guide will tell you everything you need to know about this great land. From the smallest villages, to the greatest empires. Everything has a place here.</p>
+				<div class="unflex">
+					<h1>The World of Kharzim</h1>
+					<p>Welcome to the world of Kharzim. This guide will tell you everything you need to know about this great land. From the smallest villages, to the greatest empires. Everything has a place here.</p>
+				</div>
 			</div>
-			<div class="flex-box changelog">
-				<h2>Changelog</h2>
-				<div class="flex-box"> 
-					<!-- This will need to be moved below 20230426 after flex issue in style.css has been resolved. May need to create a new div with "not-flex" class inside the "flex-box" divs? -->
-					<h3>20230429</h3>
-					<ul>
-						<h4>Added</h4>
-						<li>Changelog on the home page</li>
-						<h4>Changed</h4>
-						<li>Updated styling to be cleaner</li>
-						<h4>Fixed</h4>
-						<li>Spelling errors in multiple pages</li>
-						<li>Grammatical errors in multiple pages</li>
-					</ul>
+			<div class="flex-box changelog-direction">
+				<div class="unflex" id="changelog">
+					<h2>Changelog</h2>
 				</div>
-				<div class="flex-box">
-					<h3>20230426</h3>
-					<ul>
-						<h4>Added</h4>
-						<li>Home Page</li>
-						<li>Misc Page</li>
-						<li>Nations Page</li>
-						<li>Sershan Empire</li>
-						<li>Marcuthi Republic</li>
-						<li>Kingdom of Mutsu</li>
-						<li>The Island Prisons</li>
-						<li>Basic styling</li>
-					</ul>
+				<!-- When creating new changelog updates, give them the 'flex-box' class, and the date of when you upload it as the id. Also make sure to put the changelog at the bottom of the list, as the way this is set up, they are presented in reverse order. The ID should be YYYYMMDD -->
+				<div class="flex-box" id="20230426">
+					<div class="unflex">
+						<h3>20230426</h3>
+						<ul>
+							<h4>Added</h4>
+							<li>Home Page</li>
+							<li>Misc Page</li>
+							<li>Nations Page</li>
+							<li>Sershan Empire</li>
+							<li>Marcuthi Republic</li>
+							<li>Kingdom of Mutsu</li>
+							<li>The Island Prisons</li>
+							<li>Basic styling</li>
+						</ul>
+					</div>
 				</div>
+
+				<div class="flex-box" id="20230429"> 
+					<div class="unflex">
+						<h3>20230429</h3>
+						<ul>
+							<h4>Added</h4>
+							<li>Changelog on the home page</li>
+							<h4>Changed</h4>
+							<li>Updated styling to be cleaner</li>
+							<h4>Fixed</h4>
+							<li>Spelling errors in multiple pages</li>
+							<li>Grammatical errors in multiple pages</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="flex-box" id="20230502"> 
+					<div class="unflex">
+						<h3>20230502</h3>
+						<ul>
+							<h4>Added</h4>
+							<li>Rest of nations</li>
+							<li>Unflex</li>
+							<li>Styling to misc.html</li>
+							<h4>Changed</h4>
+							<li>Updated the way the changelog displays</li>
+						</ul>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</body>
