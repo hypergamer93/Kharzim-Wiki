@@ -1,6 +1,8 @@
+@use 'color';
+
 /* Changes the background colour for the heml element */
 html {
-	background-color:#eaddae
+	background-color: color.$body-background;
 }
 
 /* This makes the text in the summary of the dropdowns larger and bolder. */
@@ -20,7 +22,6 @@ ul {
     .has-link {
 	list-style-type: disc;
     }
-
 }
 
 /* Creates a center aligned flex container to hold flex boxes. Direction is set to column so that the boxes go down the page */
@@ -37,7 +38,7 @@ ul {
     display: flex; 
 	padding: 10px;
 	margin: 10px;
-	background-color: #00000029;
+	background-color: color.$content-background;
 
     /* Changes the h1 element in the flex box class to center it and make the text larger than normal */
     h1 {
