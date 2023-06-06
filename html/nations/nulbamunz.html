@@ -6,14 +6,11 @@
 		<link rel="stylesheet" href="../../scss/index.css">
 		<title>Kharzim Wiki - Kingdom of Nulbamunz</title>
 	</head>
+
+    <script src="/js/insert-html.js"></script>
+
 	<body>
-		<div class="nav-bar">
-			<ul>
-				<li><a href="../home.html" class="nav-link">Home</a></li>
-				<li><a href="../nations.html" class="nav-link">Nations</a></li>
-				<li><a href="../misc.html" class="nav-link">Misc (to sort)</a></li>
-			</ul>
-		</div>
+		<div insert-html="/html/components/nav-bar.html" class="nav-bar"></div>
 		<div class="container">
 			<div class="flex-box">
 				<div class="unflex">
@@ -23,139 +20,26 @@
 			<div class="flex-box">
 				<div class="unflex">
 					<h2>Overview</h2>
-					<p> In the present, the Kingdom of Nulbamunz is a barren wasteland, home to only ruined cities and scattered tribes of Dragonborn and Kobold overseen by a withering monarch.
-                        But, thousands of years before the founding of the Sershan empire, the Eternal Nulbamunz Empire was the political center of Kharzim.
-                        Surrounding the supervolcano Nulba, which was home to Kharzim's dragons, the empire held leverage over all of the other nations.
-                        After establishing a pact between human and dragon, Nulbamunz's power and reach was uncontestible.
-                        However, in the end, the very ambitions that brought the ancient empire to great heights would reduce them to ash and cause the greatest ecological disaster in Kharzim's known history.
-                    </p>
+                    <div insert-html="/html/content/nations/nulbamunz/overview.html"></div>
 				</div>
 			</div>
             <div class="flex-box">
 				<div class="unflex">
 					<h2>A History of Nulbamunz</h2>
-					<p>
-                        Due to the totally destructive nature of the Nulba Cataclysm, many details of Nulbamunz's ancient history were lost. 
-                        However, the little information that remains paints a clear picture of the empire's sheer power and the chaos that led to its downfall.
-                    </p>
-                    <p>
-                        Around -5100 SS, the city of Zhunar was established by early humans as a river valley civilization, similar to its contemporaries in Kharzim's bronze age. 
-                        Dragon sightings were frequent and they quickly became a focal point in Zhunan mythology.
-                        They were considered gods of wind, fire, death and rebirth. 
-                        The dormant supervolcano they lived in became known as Nulba, a Zhunan word roughly equivalent to "womb of the world".
-                        Despite this reverence, first contact would not be made for another 400 years, when a gravely ill old woman ascended to Nulba's summit to die.
-                        Upon her reaching the rim of the crater, she supposedly came face to face with Tiamat, who we currently understand as being the god of dragons.
-                        Tiamat offered to cure her disease and guard her people, on the condition that they would swear allegiance to Nulba's dragons and never endanger them with petty human squabbles.
-                        Healthy once more, the woman returned to her people astride a dragon and told them of her promise to Tiamat.
-                        The woman's original name has been lost to time, but we know that following her return she was renamed Nulbalahn, meaning "voice of Nulba".
-                    </p>
-                    <p>
-                        By -4630, dragons had become firmly integrated into Zhunan living. 
-                        Nulbalahn's guidance nurtured a healthy mutual relationship between the species, with each supporting and defending the other.
-                        Due to the unprecedented ease and speed of dragon flight in comparison to early boats, Zhunar single-handedly established Kharzim-wide trade.
-                        However, Nulbalahn would then die at the ripe old age of 150, her longevity undoubtedly due to Tiamat's blessing.
-                        In her abscence, the previously unrealised destructive potential of dragons began to be exploited by Zhunar's leaders.
-                        While technically abiding by Nulbalahn's promise to Tiamat, since they never instigated open conflict, their thinly veiled threats brought Kharzim to its knees and allowed Zhunar to absorb many nearby settlements with ease.
-                        With this expansion, Zhunar would become capital of the Eternal Nulbamunz Empire (Nulbamunz meaning "body of Nulba").
-                    </p>
-                    <p>
-                        Circa -4600 SS, Nulbamunz was the definitive political center of Kharzim, overseen by a long line of emperors and a long-serving senate situated in Zhunar.
-                        It was tradition for Emperors to take on new names upon ascention, all following the same naming convention: a contraction of "Nulba" and another word which refers to a trait or aspect of Nulba.
-                        These names signified that each Emperor symbolically represented Nulba in a way that was defined by their individual personality.
-                    </p>
-                    <p>
-                        Due to their destructive potential, the Nulbamunz empire held a great deal of control over other nations, although they remained independently governed. 
-                        Additionally, they held a strict monopoly on international trade due to far outpacing the transport capabilities of the rest of Kharzim, allowing for rapid economic growth.
-                        Kharzim experienced 700 years of relative peace, although the threat of fiery subjugation loomed over the entire continent.
-                        Even so, Nulbamunz's leaders were kept in check by the memory of Nulbalahn's promise, and the fear of what Tiamat would do if it was broken.
-                    </p>
-                    <p>
-                        Circa -3900, the ambitious Nulbakhav (pride of Nulba) ascended to emperor and proclaimed his intention to invade the other nations, with a primary target being the United Cities of South Kharzim. 
-                        His fellow senate members and advisors were concerned, since Kharzim's tenuous peace was beneficial to Nulbamunz. 
-                        Additionally, an explicitly imperial policy would cause pushback from other nations and create a greater risk of open war, which was an increasingly intimidating prospect due the invention of gunpowder and magical advancements in the United Cities. 
-                        Due to their overreliance on dragons, technological progress in Nulbamunz had stagnated and they wouldn't have the advantage for much longer.
-                        The senate conspired to assassinate Nulbakhav, which came to pass. 
-                        However, this was not before he brought some of his supporters into the senate and created a cult of personality, meaning that succession was intensely contested. 
-                        The next emperor, the more neutral Nulbaphanz (creed of Nulba), would last for 14 months before his assassination. 
-                        Over the next decade, the emperor turnover rate would steadily increase until the point where regimes would last only 2 weeks.
-                    </p>
-                    <p>By -3889, the succession crisis escalated into open civil war. 
-                        Cities were raided, families were torn apart and the nation was in disarray. 
-                        At the height of the war, the then-currently reigning emperor Nulbavix (wrath of Nulba) narrowly escaped an assassination attempt.
-                        Furious and fearing for his life, he ordered Nulba's dragons to raze all dissidents and set an example for the rest of Kharzim.
-                        The dragons refused, since they knew that doing so would defy Tiamat's wishes.
-                        In his anger, Nulbavix pulled out a sword and lunged at the closest dragon to slice open its nape.
-                        He was immediately burned alive.
-                        Realising that Nulbalahn's promise was broken, the dragons all burned Zhunar to the ground and flew to Nulba. 
-                        Using the collective power of their fiery breath, they stoked the volcano.
-                        At this moment, according to some dubious accounts, the massive five-headed form of Tiamat could be faintly seen emerging from Nulba's crater.
-                    </p>
-                    <p>
-                        Regardless, the following supereruption completely buried Nulbamunz in ash and sent the rest of the continent into a volcanic winter that lasted 700 years.
-                        This was the Nulba Cataclysm, and almost all Kharzim civilizations of the time were lost.
-                        While some settlements to the far north, east and west of Kharzin would recover and the rest would eventually be resettled, life would never truly come back to Nulbamunz.
-                        Despite Nulba being long dormant and becoming a lake, ash still hangs over the lost empire, and only the dragons and their humanoid descendants (the Dragonborn and Kobold) still live there.
-                    </p>
-                    <p>
-                        The last 6,000 years of Nulbamunz history have been largely static, due to the hostile environment and the constantly warring city states.
-                        The few Nulba survivors were only able to continue their bloodlines by fully hybridizing with Dragonborn. 
-                        Due to ancestral knowledge of the Nulba Cataclysm, they are devoted to Tiamat.
-                        In return for their repentance, she gave the leader of Shunar (built south of the remains of Zhunar, named such because it is simpler to pronounce in draconic tongues) the title of God-Queen, but they will never truly be forgiven by her.
-                    </p>
+                    <div insert-html="/html/content/nations/nulbamunz/history.html"></div>
 				</div>
 			</div>
 			<div class="flex-box">
 				<div class="unflex">
 					<h2>Burgs in Nulbamunz</h2>
-					<ul>
-						<details>
-                            <summary>B</summary>
-                            <li>Baram</li>
-                            <li>Bilbundush</li>
-                            <li>Birakzarba</li>
-                            <li>Buzurgula</li>
-                        </details>
-                        <details>
-                            <summary>G</summary>
-                            <li>Gathad</li>
-                            <li>Gathunzir</li>
-                            <li>Ginarg</li>
-                        </details>
-                        <details>
-                            <summary>K</summary>
-                            <li>Khabakinb</li>
-                            <li>Khamunz</li>
-                            <li>Kharagzad</li>
-                            <li>Khatharbhur</li>
-                            <li>Khiz</li>
-                            <li>Khunbala</li>
-                            <li>Khunzir</li>
-                            <li>Kizazir</li>
-                            <li>Kizirgarar</li>
-                        </details>
-                        <details>
-                            <summary>N</summary>
-                            <li>Nargundun</li>
-                            <li>Nulanar</li>
-                            <li>Nulbunba</li>
-                        </details>
-                        <details>
-                            <summary>S</summary>
-                            <li>Shakibhar</li>
-                            <li>Shalar</li>
-                        </details>
-                        <details>
-                            <summary>T</summary>
-                            <li>Tumunbamunz</li>
-                            <li>Tumunz</li>
-                        </details>
-                        <details>
-                            <summary>Z</summary>
-                            <li>Zinulb</li>
-                        </details>
-					</ul>
+                    <div insert-html="/html/content/nations/nulbamunz/burgs.html"></div>
 				</div>
 			</div>
 		</div>
 	</body>
+
+    <script>
+        insertHTML()
+    </script>
+
 </html>

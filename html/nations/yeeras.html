@@ -6,14 +6,11 @@
 		<link rel="stylesheet" href="../../scss/index.css">
 		<title>Kharzim Wiki - Yeerish Duchy</title>
 	</head>
+
+	<script src="/js/insert-html.js"></script>
+	
 	<body>
-		<div class="nav-bar">
-			<ul>
-				<li><a href="../home.html" class="nav-link">Home</a></li>
-				<li><a href="../nations.html" class="nav-link">Nations</a></li>
-				<li><a href="../misc.html" class="nav-link">Misc (to sort)</a></li>
-			</ul>
-		</div>
+		<div insert-html="/html/components/nav-bar.html" class="nav-bar"></div>
 		<div class="container">
 			<div class="flex-box">
 				<div class="unflex">
@@ -29,34 +26,14 @@
 			<div class="flex-box">
 				<div class="unflex">
 					<h2>Burgs in Yeeras</h2>
-					<ul>
-						<details>
-                            <summary>E</summary>
-                            <li>Ealyenor</li>
-                        </details>
-                        <details>
-                            <summary>H</summary>
-                            <li>Hliral</li>
-                        </details>
-                        <details>
-                            <summary>K</summary>
-                            <li>Kanalasele</li>
-                        </details>
-                        <details>
-                            <summary>N</summary>
-                            <li>Nasethyr</li>
-                        </details>
-                        <details>
-                            <summary>R</summary>
-                            <li>Raumenolume</li>
-                        </details>
-                        <details>
-                            <summary>S</summary>
-                            <li>Shena</li>
-                        </details>
-					</ul>
+					<div insert-html="/html/content/nations/aberthe/burgs.html"></div>
 				</div>
 			</div>
 		</div>
 	</body>
+	
+	<script>
+		insertHTML();
+	</script>
+	
 </html>

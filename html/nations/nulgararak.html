@@ -6,14 +6,11 @@
 		<link rel="stylesheet" href="../../scss/index.css">
 		<title>Kharzim Wiki - Nulgararak</title>
 	</head>
+
+	<script src="/js/insert-html.js"></script>
+	
 	<body>
-		<div class="nav-bar">
-			<ul>
-				<li><a href="../home.html" class="nav-link">Home</a></li>
-				<li><a href="../nations.html" class="nav-link">Nations</a></li>
-				<li><a href="../misc.html" class="nav-link">Misc (to sort)</a></li>
-			</ul>
-		</div>
+		<div insert-html="/html/components/nav-bar.html" class="nav-bar"></div>
 		<div class="container">
 			<div class="flex-box">
 				<div class="unflex">
@@ -28,4 +25,9 @@
 			</div>
 		</div>
 	</body>
+	
+	<script>
+		insertHTML();
+	</script>
+	
 </html>

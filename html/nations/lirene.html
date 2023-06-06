@@ -6,14 +6,11 @@
 		<link rel="stylesheet" href="../../scss/index.css">
 		<title>Kharzim Wiki - Lirenean Federation</title>
 	</head>
+
+    <script src="/js/insert-html.js"></script>
+    
 	<body>
-		<div class="nav-bar">
-			<ul>
-				<li><a href="../home.html" class="nav-link">Home</a></li>
-				<li><a href="../nations.html" class="nav-link">Nations</a></li>
-				<li><a href="../misc.html" class="nav-link">Misc (to sort)</a></li>
-			</ul>
-		</div>
+		<div insert-html="/html/components/nav-bar.html" class="nav-bar"></div>
 		<div class="container">
 			<div class="flex-box">
 				<div class="unflex">
@@ -29,60 +26,14 @@
 			<div class="flex-box">
 				<div class="unflex">
 					<h2>Burgs in Lirene</h2>
-					<ul>
-						<details>
-                            <summary>A</summary>
-                            <li>Aimyfa</li>
-                            <li>Ashtasad</li>
-                        </details>
-                        <details>
-                            <summary>C</summary>
-                            <li>Cyuethyr</li>
-                        </details>
-                        <details>
-                            <summary>D</summary>
-                            <li>Doname</li>
-                        </details>
-                        <details>
-                            <summary>E</summary>
-                            <li>Eshlin</li>
-                        </details>
-                        <details>
-                            <summary>G</summary>
-                            <li>Gafdofenas</li>
-                            <li>Garagz</li>
-                        </details>
-                        <details>
-                            <summary>I</summary>
-                            <li>Ish Airal</li>
-                            <li>Ith Arwin</li>
-                        </details>
-                        <details>
-                            <summary>K</summary>
-                            <li>Kande</li>
-                            <li>Khiz</li>
-                        </details>
-                        <details>
-                            <summary>M</summary>
-                            <li>Meethe</li>
-                        </details>
-                        <details>
-                            <summary>N</summary>
-                            <li>Naland</li>
-                            <li>Nylmrionle</li>
-                        </details>
-                        <details>
-                            <summary>R</summary>
-                            <li>Rethe</li>
-                        </details>
-                        <details>
-                            <summary>T</summary>
-                            <li>Thenona</li>
-                            <li>Thvethyr</li>
-                        </details>
-					</ul>
+					<div insert-html="/html/content/nations/kharbad/burgs.html"></div>
 				</div>
 			</div>
 		</div>
 	</body>
+    
+	<script>
+		insertHTML();
+	</script>
+	
 </html>

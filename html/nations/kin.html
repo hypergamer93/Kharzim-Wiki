@@ -6,14 +6,11 @@
 		<link rel="stylesheet" href="../../scss/index.css">
 		<title>Kharzim Wiki - Kingdom of Kin</title>
 	</head>
+
+    <script src="/js/insert-html.js"></script>
+    
 	<body>
-		<div class="nav-bar">
-			<ul>
-				<li><a href="../home.html" class="nav-link">Home</a></li>
-				<li><a href="../nations.html" class="nav-link">Nations</a></li>
-				<li><a href="../misc.html" class="nav-link">Misc (to sort)</a></li>
-			</ul>
-		</div>
+		<div insert-html="/html/components/nav-bar.html" class="nav-bar"></div>
 		<div class="container">
 			<div class="flex-box">
 				<div class="unflex">
@@ -29,136 +26,14 @@
 			<div class="flex-box">
 				<div class="unflex">
 					<h2>Burgs in Kin</h2>
-					<ul>
-						<details>
-                            <summary>A</summary>
-                            <li>Amwall</li>
-                            <li>Angviewmere</li>
-                            <li>Aureshield</li>
-                            <li>Autumn</li>
-                            <li>Autumnhelm</li>
-                        </details>
-                        <details>
-                            <summary>B</summary>
-                            <li>Bameden</li>
-                            <li>Bamefield</li>
-                            <li>Bearow</li>
-                            <li>Biragz</li>
-                            <li>Bridcall</li>
-                            <li>Brirongro</li>
-                            <li>Brittme</li>
-                        </details>
-                        <details>
-                            <summary>C</summary>
-                            <li>Cakeverf</li>
-                            <li>Castmoreden</li>
-                            <li>Crowgbu</li>
-                            <li>Cryspell</li>
-                        </details>
-                        <details>
-                            <summary>D</summary>
-                            <li>Dawnhalley</li>
-                            <li>Dawnwellder</li>
-                            <li>Dewgrasp</li>
-                            <li>Doglenterme</li>
-                        </details>
-                        <details>
-                            <summary>E</summary>
-                            <li>Eagrovemire</li>
-                            <li>Edgemeband</li>
-                            <li>Eguard</li>
-                        </details>
-                        <details>
-                            <summary>F</summary>
-                            <li>Feargulch</li>
-                            <li>Fearsehate</li>
-                        </details>
-                        <details>
-                            <summary>G</summary>
-                            <li>Gloomber</li>
-                            <li>Greereguard</li>
-                        </details>
-                        <details>
-                            <summary>H</summary>
-                            <li>Houndford</li>
-                        </details>
-                        <details>
-                            <summary>K</summary>
-                            <li>Khathar</li>
-                            <li>Kindur</li>
-                            <li>Knighgagoon</li>
-                        </details>
-                        <details>
-                            <summary>L</summary>
-                            <li>Ladowfalls</li>
-                            <li>Lastvault</li>
-                        </details>
-                        <details>
-                            <summary>M</summary>
-                            <li>Mudcall</li>
-                            <li>Mudtown (coastal)</li>
-                            <li>Mudwood</li>
-                        </details>
-                        <details>
-                            <summary>N</summary>
-                            <li>Nabilbundu</li>
-                            <li>Narar</li>
-                        </details>
-                        <details>
-                            <summary>O</summary>
-                            <li>Oalevame</li>
-                            <li>Oldcall</li>
-                            <li>Oxfall</li>
-                            <li>Oxlight</li>
-                        </details>
-                        <details>
-                            <summary>P</summary>
-                            <li>Pondwallde</li>
-                        </details>
-                        <details>
-                            <summary>R</summary>
-                            <li>Rateborn</li>
-                            <li>Rorest</li>
-                            <li>Rovemine</li>
-                            <li>Rustpoint</li>
-                        </details>
-                        <details>
-                            <summary>S</summary>
-                            <li>Scorchill</li>
-                            <li>Scorcrest</li>
-                            <li>Shadushur</li>
-                            <li>Shathaziza</li>
-                            <li>Shaven</li>
-                            <li>Sicere</li>
-                            <li>Sillow</li>
-                            <li>Smallpass</li>
-                            <li>Smallver</li>
-                            <li>Smootle</li>
-                            <li>Snowfalls</li>
-                            <li>Snowmemon</li>
-                            <li>Southill</li>
-                            <li>Steamouth</li>
-                            <li>Stoneborn</li>
-                        </details>
-                        <details>
-                            <summary>T</summary>
-                            <li>Timer</li>
-                            <li>Timhorn</li>
-                            <li>Tralefield</li>
-                        </details>
-                        <details>
-                            <summary>W</summary>
-                            <li>Westpoint</li>
-                            <li>Whithall</li>
-                            <li>Wolfrost</li>
-                        </details>
-                        <details>
-                            <summary>Z</summary>
-                            <li>Zunzar</li>
-                        </details>
-					</ul>
+					<div insert-html="/html/content/nations/kharbad/burgs.html"></div>
 				</div>
 			</div>
 		</div>
 	</body>
+    
+	<script>
+		insertHTML();
+	</script>
+	
 </html>

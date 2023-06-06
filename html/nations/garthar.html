@@ -6,14 +6,11 @@
 		<link rel="stylesheet" href="../../scss/index.css">
 		<title>Kharzim Wiki - United Kingdom of Gathar</title>
 	</head>
+
+	<script src="/js/insert-html.js"></script>
+	
 	<body>
-		<div class="nav-bar">
-			<ul>
-				<li><a href="../home.html" class="nav-link">Home</a></li>
-				<li><a href="../nations.html" class="nav-link">Nations</a></li>
-				<li><a href="../misc.html" class="nav-link">Misc (to sort)</a></li>
-			</ul>
-		</div>
+		<div insert-html="/html/components/nav-bar.html" class="nav-bar"></div>
 		<div class="container">
 			<div class="flex-box">
 				<div class="unflex">
@@ -29,32 +26,14 @@
 			<div class="flex-box">
 				<div class="unflex">
 					<h2>Burgs in Gathar</h2>
-					<ul>
-						<details>
-                            <summary>A</summary>
-                            <li>Akzund</li>
-                        </details>
-                        <details>
-                            <summary>B</summary>
-                            <li>Badab</li>
-                            <li>Bizizad</li>
-                        </details>
-                        <details>
-                            <summary>K</summary>
-                            <li>Khiz</li>
-                        </details>
-                        <details>
-                            <summary>N</summary>
-                            <li>Nulnulba</li>
-                            <li>Nuraz</li>
-                        </details>
-                        <details>
-                            <summary>S</summary>
-                            <li>Shathizdus</li>
-                        </details>
-					</ul>
+					<div insert-html="/html/content/nations/garthar/burgs.html"></div>
 				</div>
 			</div>
 		</div>
 	</body>
+	
+	<script>
+		insertHTML();
+	</script>
+	
 </html>

@@ -6,14 +6,11 @@
 		<link rel="stylesheet" href="../../scss/index.css">
 		<title>Kharzim Wiki - Kingdom of Mutsu</title>
 	</head>
+
+	<script src="/js/insert-html.js"></script>
+	
 	<body>
-		<div class="nav-bar">
-			<ul>
-				<li><a href="../home.html" class="nav-link">Home</a></li>
-				<li><a href="../nations.html" class="nav-link">Nations</a></li>
-				<li><a href="../misc.html" class="nav-link">Misc (to sort)</a></li>
-			</ul>
-		</div>
+		<div insert-html="/html/components/nav-bar.html" class="nav-bar"></div>
 		<div class="container">
 			<div class="flex-box">
 				<div class="unflex">
@@ -25,8 +22,7 @@
 			<div class="flex-box">
 				<div class="unflex">
 					<h2>Overview</h2>
-					<p>The Kingdom of Mutsu was established in 285 SS by <a href="#">Mutsu I</a>, to unite the northern coast of Westland Kharzim. Eventually, they started expanding south, until they hit water. Later on, after they started interacting with the <a href="sersha.html">Sershan Empire</a>, they discovered a decently sized island off the west coast, and so they started settling there in around 327 SS. In 354 SS, King Mutsu III entrusted his closest Duke, <a href="#">Gortreoza</a> to govern his own land, and formed the <a href="#">Duchy of Gortreoza</a>.</p>
-					<p>Currently ruled by King Mutsu IX</p>
+					<div insert-html="/html/content/nations/mutsu/overview.html"></div>
 				</div>
 			</div>
 
@@ -41,156 +37,14 @@
 			<div class="flex-box">
 				<div class="unflex">
 					<h2>Burgs in the Kingdom of Mutsu</h2>
-					<ul>
-						<details>
-							<summary>A</summary>
-							<li>Aeragulukk</li>
-							<li>Amnes</li>
-							<li>Analas</li>
-						</details>
-						<details>
-							<summary>B</summary>
-							<li>Balenuz</li>
-							<li>Barage</li>
-							<li>Brerstin</li>
-							<li>Brilba</li>
-							<li>Brilduch</li>
-						</details>
-						<details>
-							<summary>C</summary>
-							<li>Cyhlond</li>
-						</details>
-						<details>
-							<summary>D</summary>
-							<li>Do'andobeth</li>
-							<li>Dugkan</li>
-						</details>
-						<details>
-							<summary>E</summary>
-							<li>Elssad</li>
-							<li>Emelle</li>
-							<li>Emyhasesesi</li>
-							<li>Evralonegul</li>
-							<li>Evralunena</li>
-							<li>Evraquana</li>
-							<li>Eyakinb</li>
-						</details>
-						<details>
-							<summary>F</summary>
-							<li>Froth</li>
-							<li>Fynmoth</li>
-						</details>
-						<details>
-							<summary>G</summary>
-							<li>Galgzund</li>
-							<li>Ginyle</li>
-							<li>Girgaric</li>
-							<li>Gizen</li>
-							<li>Glumronkuc</li>
-							<li>Gostuz</li>
-							<li>Gudga</li>
-							<li>Gudgach</li>
-						</details>
-						<details>
-							<summary>H</summary>
-							<li>Helelune</li>
-							<li>Hesath</li>
-							<li>Hildhor</li>
-							<li>Hloinas</li>
-						</details>
-						<details>
-							<summary>I</summary>
-							<li>Ilelsya</li>
-						</details>
-						<details>
-							<summary>K</summary>
-							<li>Kennerg</li>
-							<li>Khatharb</li>
-							<li>Kmlonselion</li>
-							<li>Koshund</li>
-						</details>
-						<details>
-							<summary>L</summary>
-							<li>Lefdoraluma</li>
-							<li>Lileanleri</li>
-							<li>Linnerg</li>
-							<li>Liqualashal</li>
-							<li>Lyherius</li>
-						</details>
-						<details>
-							<summary>M</summary>
-							<li>Mararartec</li>
-							<li>Mathilla</li>
-							<li>Mathilmethe</li>
-							<li>Meethamerin</li>
-							<li>Migero</li>
-							<li>Mornkuc</li>
-						</details>
-						<details>
-							<summary>N</summary>
-							<li>Nanarithnor</li>
-							<li>Nararic</li>
-							<li>Nargath</li>
-							<li>Naric</li>
-							<li>Nariondest</li>
-							<li>Natalfond</li>
-							<li>Nuledgurth</li>
-							<li>Nulkundus</li>
-						</details>
-						<details>
-							<summary>O</summary>
-							<li>Ollshalyera</li>
-							<li>Olomarenfe</li>
-							<li>Olumenenerin</li>
-							<li>Ozuzirana</li>
-						</details>
-						<details>
-							<summary>R</summary>
-							<li>Ryranntyrho</li>
-						</details>
-						<details>
-							<summary>S</summary>
-							<li>Selsasadhel</li>
-							<li>Sganddud</li>
-							<li>Shemar</li>
-							<li>Shuguk</li>
-							<li>Solfirth</li>
-							<li>Sytenobeth</li>
-						</details>
-						<details>
-							<summary>T</summary>
-							<li>Thaleandell</li>
-							<li>Thelse</li>
-							<li>Theod</li>
-							<li>Theodette</li>
-							<li>Theodhelm</li>
-							<li>Throtrek</li>
-							<li>Thyfadarnola</li>
-						</details>
-						<details>
-							<summary>U</summary>
-							<li>Ulleandemel</li>
-							<li>Umeralas</li>
-							<li>Umyrandenil</li>
-							<li>Ustanddan</li>
-						</details>
-						<details>
-							<summary>V</summary>
-							<li>Varnan</li>
-						</details>
-						<details>
-							<summary>Y</summary>
-							<li>Ymalyran</li>
-							<li>Yozigrim</li>
-							<li>Yulduch</li>
-						</details>
-						<details>
-							<summary>Z</summary>
-							<li>Zilakinb</li>
-						</details>
-					</ul>
+					<div insert-html="/html/content/nations/kharbad/burgs.html"></div>
 				</div>
 			</div>
 		</div>
 	</body>
+
+	<script>
+		insertHTML();
+	</script>
+
 </html>

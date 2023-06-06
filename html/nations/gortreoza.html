@@ -6,14 +6,11 @@
 		<link rel="stylesheet" href="../../scss/index.css">
 		<title>Kharzim Wiki - Duchy of Gortreoza</title>
 	</head>
+
+    <script src="/js/insert-html.js"></script>
+    
 	<body>
-		<div class="nav-bar">
-			<ul>
-				<li><a href="../home.html" class="nav-link">Home</a></li>
-				<li><a href="../nations.html" class="nav-link">Nations</a></li>
-				<li><a href="../misc.html" class="nav-link">Misc (to sort)</a></li>
-			</ul>
-		</div>
+		<div insert-html="/html/components/nav-bar.html" class="nav-bar"></div>
 		<div class="container">
 			<div class="flex-box">
 				<div class="unflex">
@@ -29,51 +26,14 @@
 			<div class="flex-box">
 				<div class="unflex">
 					<h2>Burgs in Gortreoza</h2>
-					<ul>
-						<details>
-                            <summary>B</summary>
-                            <li>Batan</li>
-                            <li>Borgzah</li>
-                        </details>
-                        <details>
-                            <summary>D</summary>
-                            <li>Dartec</li>
-                            <li>Draumenas</li>
-                        </details>
-                        <details>
-                            <summary>E</summary>
-                            <li>Ereliz</li>
-                            <li>Erere</li>
-                        </details>
-                        <details>
-                            <summary>H</summary>
-                            <li>Hildgrim</li>
-                        </details>
-                        <details>
-                            <summary>K</summary>
-                            <li>Koshaneliz</li>
-                        </details>
-                        <details>
-                            <summary>R</summary>
-                            <li>Ratirazar</li>
-                        </details>
-                        <details>
-                            <summary>S</summary>
-                            <li>Shathar</li>
-                            <li>Shatharnel</li>
-                        </details>
-                        <details>
-                            <summary>T</summary>
-                            <li>Thamesenor</li>
-                        </details>
-                        <details>
-                            <summary>V</summary>
-                            <li>Velkabar</li>
-                            <li>Vigherad</li>
-                        </details>
-					</ul>
+					<div insert-html="/html/content/nations/gortreoza/burgs.html"></div>
 				</div>
 			</div>
 		</div>
 	</body>
+    
+	<script>
+		insertHTML();
+	</script>
+	
 </html>
